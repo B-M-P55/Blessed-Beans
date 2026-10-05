@@ -1,0 +1,337 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+line-height:1.6;
+}
+
+/* NAVBAR */
+.navbar{
+background:#7D0A0A;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 70px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:20px;
+font-weight:600;
+letter-spacing:1px;
+}
+
+/* NAV LINKS */
+.nav-links a{
+color:white;
+margin-left:35px;
+text-decoration:none;
+position:relative;
+font-size:15px;
+}
+
+/* underline animation */
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:2px;
+background:white;
+transition:0.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.nav-links a.active::after{
+width:100%;
+}
+
+/* SEARCH ICON */
+.nav-icons i{
+font-size:18px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.nav-icons i:hover{
+transform:scale(1.2);
+}
+
+/* HERO */
+.hero img{
+width:100%;
+height:380px;
+object-fit:cover;
+display:block;
+}
+
+/* STORY */
+.story{
+background:#eeeeee;
+color:black;
+padding:70px 20px;
+}
+
+.story-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:50px;
+}
+
+.story img{
+width:460px;
+border-radius:12px;
+transition:0.4s;
+}
+
+.story img:hover{
+transform:scale(1.05);
+}
+
+/* DOUBLE IMAGE (NO HOVER EFFECT HERE) */
+.double-image{
+display:flex;
+}
+
+.double-image img{
+width:50%;
+height:320px;
+object-fit:cover;
+transition:none;
+}
+
+.double-image img:hover{
+transform:none;
+}
+
+/* SECTION TITLES */
+.section-heading{
+text-align:center;
+font-size:30px;
+margin-bottom:10px;
+}
+
+.section-sub{
+text-align:center;
+margin-bottom:40px;
+color:#cccccc;
+}
+
+/* GROUP EVENTS */
+.groups{
+max-width:1200px;
+margin:auto;
+padding:70px 20px;
+}
+
+.event-layout{
+display:flex;
+gap:20px;
+}
+
+.event-main{
+position:relative;
+width:60%;
+}
+
+.event-main img{
+width:90%;
+height:400px;
+object-fit:cover;
+border-radius:12px;
+transition:0.4s;
+}
+
+.event-main img:hover{
+transform:scale(1.04);
+}
+
+.event-overlay{
+position:absolute;
+bottom:20px;
+left:20px;
+background:rgba(0,0,0,0.6);
+padding:20px;
+border-radius:8px;
+}
+
+.event-gallery{
+width:40%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+.event-gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+transition:0.4s;
+}
+
+.event-gallery img:hover{
+transform:scale(1.06);
+}
+
+/* VIDEO SECTION */
+.video-section{
+padding:70px 20px;
+text-align:center;
+}
+
+.video-container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.video-container video{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:12px;
+}
+
+
+/* ACTIVITIES */
+.activities{
+background:#eeeeee;
+color:black;
+padding:70px 20px;
+}
+
+.activity-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+gap:40px;
+align-items:center;
+justify-content:space-between;
+}
+
+.images{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.images img{
+width:250px;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+transition:0.4s;
+}
+
+.images img:hover{
+transform:scale(1.05);
+}
+
+/* BUTTON */
+.cta-btn{
+display:block;
+margin:60px auto 10px auto;
+padding:20px 40px;
+background:#7D0A0A;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:15px;
+transition:0.3s;
+}
+
+.cta-btn:hover{
+background:#a80000;
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* FOOTER */
+.footer{
+background:#7D0A0A;
+padding:60px 20px;
+}
+
+.footer-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-logo h2{
+line-height:1.3;
+}
+
+.footer-col ul{
+list-style:none;
+}
+
+.footer-col li{
+margin-bottom:10px;
+}
+
+.footer-col a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer-col a:hover{
+padding-left:6px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width:1024px){
+
+.event-layout{
+flex-direction:column;
+}
+
+.event-main{
+width:100%;
+}
+
+.event-gallery{
+width:100%;
+}
+
+.video-container{
+grid-template-columns:1fr;
+}
+
+.activity-container{
+flex-direction:column;
+text-align:center;
+}
+.story-container{
+flex-direction:column;
+text-align:center;
+}
+
+}

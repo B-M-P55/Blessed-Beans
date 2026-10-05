@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blessed Beans - Events & Activities</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="event.css">
+
+<!-- Search Icon -->
+<link rel="stylesheet"
+href="../css/event.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+<div class="logo">☕️ Blessed Beans</div>
+
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="event.html" class="active">Event & Activity</a>
+<a href="contant.html">Contact</a>
+<a href="memo.html">Souvenirs & Memes</a>
+</nav>
+
+<div class="nav-icons">
+<i class="fas fa-search"></i>
+</div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<img src="../image/bwelMoo/1.png" alt="">
+</section>
+
+<!-- STORY -->
+<section class="story">
+<div class="story-container">
+
+<img src="../image/bwelMoo/2.avif" alt="">
+
+<div class="text">
+<h2>Our Story</h2>
+<p>
+We are passionate about delivering exceptional coffee experiences.
+Our café blends tradition and creativity to create a warm and inspiring atmosphere.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- DOUBLE IMAGE -->
+<section class="double-image">
+<img src="../image/bwelMoo/8.webp" alt="">
+<img src="../image/bwelMoo/9.avif" alt="">
+</section>
+
+<!-- GROUP EVENTS -->
+<section class="groups">
+
+<h2 class="section-heading">Group Meetings & Special Events</h2>
+<p class="section-sub">
+Perfect space for team gatherings, study groups and celebrations.
+</p>
+
+<div class="event-layout">
+
+<div class="event-main">
+<img src="../image/bwelMoo/3.jpg" alt="">
+<div class="event-overlay">
+<h3>Host Your Event With Us</h3>
+<p>Comfortable environment for meetings and celebrations.</p>
+</div>
+</div>
+
+<div class="event-gallery">
+<img src="../image/bwelMoo/4.avif">
+<img src="../image/bwelMoo/5.jpg">
+<img src="../image/bwelMoo/6.jpg">
+<img src="../image/bwelMoo/7.avif">
+</div>
+
+</div>
+
+</section>
+
+<!-- VIDEO SECTION -->
+<section class="video-section">
+
+<h2 class="section-heading">Cafe Moments</h2>
+
+<div class="video-container">
+
+<video class="auto-video" muted loop playsinline>
+<source src="../video/video_1.mp4" type="video/mp4">
+</video>
+
+<video class="auto-video" muted loop playsinline>
+<source src="../video/video_2026-03-18_18-37-13.mp4" type="video/mp4">
+</video>
+
+<video class="auto-video" muted loop playsinline>
+<source src="../video/video_2026-03-19_19-05-09.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+
+<!-- ACTIVITIES -->
+<section class="activities">
+
+<div class="activity-container">
+
+<div class="images">
+<img src="../image/bwelMoo/10.png">
+<img src="../image/bwelMoo/11.avif">
+<img src="../image/bwelMoo/12.avif">
+<img src="../image/bwelMoo/13.webp">
+</div>
+
+<div class="text">
+<h2>Creative Activities</h2>
+<p>
+Enjoy hands-on coffee workshops, painting sessions,
+and relaxing creative moments at our café.
+</p>
+</div>
+
+</div>
+
+<button class="cta-btn">
+With love and gratitude, we invite you to share in the joy of our activities & events
+</button>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-logo">
+<h2>BLESSED<br>BEANS</h2>
+</div>
+
+<div class="footer-col">
+<h3>Privacy</h3>
+<ul>
+<li><a href="#">Terms of use</a></li>
+<li><a href="#">Privacy policy</a></li>
+<li><a href="#">Cookies</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h3>Services</h3>
+<ul>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Order ahead</a></li>
+<li><a href="#">Menu</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h3>About Us</h3>
+<ul>
+<li><a href="#">Find a location</a></li>
+<li><a href="#">About us</a></li>
+<li><a href="#">Our story</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h3>Information</h3>
+<ul>
+<li><a href="#">Group and Events</a></li>
+<li><a href="#">Activities</a></li>
+<li><a href="#">Jobs</a></li>
+</ul>
+</div>
+
+</div>
+
+</footer>
+
+<!-- VIDEO AUTOPLAY SCRIPT -->
+<script>
+const videos = document.querySelectorAll(".auto-video");
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.play();
+}else{
+entry.target.pause();
+}
+});
+},{threshold:0.5});
+
+videos.forEach(video => observer.observe(video));
+</script>
+
+</body>
+</html>

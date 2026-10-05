@@ -1,0 +1,425 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body {
+  background: #fff;
+}
+
+/* NAVBAR 
+header {
+  background: #8B0000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}*/
+
+
+/* HEADER */
+.topbar{
+    background: #7D0A0A;
+    padding: 10px 0;
+}
+
+.nav-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.brand{
+    color: white;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+
+.nav-menu{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover{
+    color: #ffd7a0;
+}
+
+.nav-right i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Souvenirs Section*/
+.sou {
+  background-image: url("/image/hsuShoonPyae/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  
+}
+
+/*.title {
+  background: rgba(255, 255, 255, 0.7);
+  background-position: center;
+  width: 100%;
+  text-align: center;
+  padding: 80px 20px;
+}*/
+
+.title {
+  background: rgba(255, 255, 255, 0.7);
+  margin: auto;
+  padding: 30px 80px;
+  text-align: center;
+}
+
+.title h1 {
+  color: #8B0000;
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.title p {
+  margin: auto;
+  max-width: 600px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Item card */
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card button {
+  display: flex;
+  margin:auto;
+  padding: 15px 15px;
+  background: #FFD700;
+  color: #7D0A0A;
+  border: none;
+  font-weight: bold;
+  width: 140px;
+  justify-content: center;
+}
+
+.card button:hover {
+  background: #ffffff;
+  transform: scale(1.05);
+  transition: transform 0.5s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+/* Memo Section */
+.meMo {
+  background: #8B0000;
+  color: white;
+  text-align: center;
+  
+  padding: 50px 20px;
+}
+
+.meMo h2 {
+  margin-bottom: 25px;
+  color: #FFB200;
+  letter-spacing: 3px;
+}
+
+.meMo p {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: justify;
+  color: #FFB200;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.memoPic {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.memoPic img {
+  width: 350px;
+  height: 280px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.memoPic img {
+  transition: transform 0.3s;
+}
+
+.memoPic img:hover {
+  transform: scale(1.05);
+}
+
+/*Thank you section*/
+.tyLetter {
+  text-align: center;
+  margin: 40px;
+}
+
+.tyLetter h1{
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #7D0A0A;
+}
+
+.tyLetter p{
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: #7D0A0A;
+  text-align: justify;
+}
+
+.tyLetter img {
+  display: block;
+  justify-content: stretch;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.tyLetter img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+
+/*Footer */
+
+.footer {
+  background: #8b0000; /* deep red */
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.footer-logo h2 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+/* Columns */
+.footer-col h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+.footer-col ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Hover animation */
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+
+
+/*HEADER 
+
+  header * {
+  flex-shrink: 0;
+}
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #8b0000;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav a {
+    padding: 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .nav.active {
+    display: flex;
+  }*/
+
+  /*RESPONSIVE
+  @media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}*/
+
+/* MOBILE NAVBAR */
+@media (max-width: 768px){
+
+    .nav-container{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-menu{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .nav-menu a{
+        font-size: 13px;
+    }
+
+    .nav-right{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+    @media (max-width: 600px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+  .items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .memoPic {
+    flex-direction: column;
+    align-items: center;
+  }
+}
